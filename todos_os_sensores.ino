@@ -90,8 +90,8 @@ void setup()
 //retorna a umidade
   float dht22()
   {
-    aU = 1;
-    bU = 0;
+    aU = 1.020819677;
+    bU = -2.784236918;
     umidade = aU * dht.readHumidity() + bU;
     return umidade;
   }
