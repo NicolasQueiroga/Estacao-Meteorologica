@@ -90,16 +90,17 @@ void setup()
 //retorna a umidade
   float dht22()
   {
-    
-    umidade = dht.readHumidity();
+    aU = 1;
+    bU = 0;
+    umidade = aU * dht.readHumidity() + bU;
     return umidade;
   }
 
 //retorna a temperatura
   float lm35()
   {
-    aT = 99.58215;
-    bT = -49.7302;
+    aT = 99.62636965;
+    bT = 0;
     float percent = analogRead(lmPin)/1023.0;
     float volts = percent * 1.1;
     temperatura = aT * volts + bT;
