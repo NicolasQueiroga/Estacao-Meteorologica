@@ -138,8 +138,8 @@ void loop()
   
 //////////////////////////////////////////////////////////////////
   lcd.setBacklight(HIGH);
-  lcd.setCursor(7, 0);
-  lcd.print("EM"); // "Estação Meteorológica"
+  lcd.setCursor(2, 0);
+  lcd.print("Estacao Met."); // "Estação Meteorológica"
 
   current = digitalRead(buttonPin);
 
